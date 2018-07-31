@@ -7,7 +7,7 @@ class CreateTodo extends Component {
         <form>
           </p>
             <label>Add ToDo</label>
-            <input type="text" />
+            <input type="text" onChange={(event) => this.handleChange(event)}/>
           </p>
           <input type="submit" />
         </form>
