@@ -14,7 +14,7 @@ class CreateTodo extends Component {
       text: e.target.value
     });
   }
-  
+
   render() {
     return(
       <div>
@@ -31,4 +31,4 @@ class CreateTodo extends Component {
   }
 }
 
-export default CreateTodo;
+export default connect(null, mapDispatchToProps)(connectCreateTodo);
