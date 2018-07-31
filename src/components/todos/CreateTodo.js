@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import {connect} from 'react-redux'
 
 class CreateTodo extends Component {
   constructor(){
@@ -13,7 +14,7 @@ class CreateTodo extends Component {
       text: e.target.value
     });
   }
-
+  
   render() {
     return(
       <div>
