@@ -1,8 +1,7 @@
-export default function manageTodo(state = {
-  todos: [],
-}, action) {
+export default function manageTodo(state = {todos: []}, action) {
+  switch(action.type) {
 
-  console.log("reducer received this action:", action);
 
-  return state;
+    return state;
+  }
 }
