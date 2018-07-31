@@ -13,14 +13,14 @@ class CreateTodo extends Component {
       text: e.target.value
     });
   }
-  
+
   render() {
     return(
       <div>
         <form>
           </p>
             <label>Add ToDo</label>
-            <input type="text" onChange={this.handleChange}/>
+            <input type="text" onChange={this.handleChange} value={this.state.text}/>
           </p>
           <input type="submit" />
         </form>
